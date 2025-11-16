@@ -29,7 +29,7 @@ const updateUser = async (request, response) => {
     try {
         const id = parseInt(request.params.id);
         const { name, email, passwd } = request.body;
-        const hashedPasswd = await hashP(passwd);
+        const hashedPasswd = await hashP.hashP(passwd);
 
         const result = await pool.query(
             'UPDATE users SET name = $1, email = $2, password = $3 WHERE id = $4 RETURNING *',
