@@ -38,7 +38,7 @@ const SalesList = () => {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Monto</th>S
+                        <th>Monto</th>
                         <th>Fecha Creacion</th>
                         <th>Cliente</th>
                     </tr>
