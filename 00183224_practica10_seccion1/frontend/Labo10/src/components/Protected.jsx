@@ -1,7 +1,7 @@
 // Protected.js
 
 import React, { useEffect, useState } from "react";
-import API from "./utils/api.js";
+import API from "../utils/api.js";
 
 const Protected = () => {
   const [message, setMessage] = useState("");

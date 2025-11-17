@@ -1,14 +1,14 @@
 // src/ app.js
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./Login.jsx";
-import Protected from "./Protected.jsx";
+import Protected from "./components/Protected.jsx";
+import SignIn from "./components/signIn.jsx";
 
 const App = () => (
   <Router>
     <Routes>
-      <Route path="/" element={<Login />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<SignIn />} />
+      <Route path="/signin" element={<SignIn />} />
       <Route path="/protected" element={<Protected />} />
     </Routes>
   </Router>
